@@ -24,4 +24,4 @@ jobs:
             - run: pnpm install --frozen-lockfile
             - run: pnpm run e2e:ci
               env:
-                  SHAMELA_API_KEY: ${{secrets.ZUBAIR_ALI_ZAI_API}}
+                  ZUBAIR_ALI_ZAI_API: ${{secrets.ZUBAIR_ALI_ZAI_API}}
