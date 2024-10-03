@@ -28,6 +28,22 @@
         "e2e": "node --env-file .env $(which pnpm) exec vitest run --coverage --config vitest.e2e.config.ts",
         "e2e:ci": "pnpm exec vitest --config vitest.e2e.config.ts --run"
     },
+    "targets": {
+        "main": {
+            "context": "node",
+            "source": "src/index.ts",
+            "engines": {
+                "node": ">=20.0.0"
+            },
+            "includeNodeModules": {
+                "process": false,
+                "buffer": false,
+                "http": false,
+                "https": false,
+                "vm": false
+            }
+        }
+    },
     "keywords": [
         "zubair",
         "ali",
